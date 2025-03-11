@@ -7,4 +7,5 @@ class Person:
   def __del__(self):
     print(f'{self.name} has been deleted')
 
-p = Person('Dhiraj', 44) 
+if __name__ == "__main__":
+  p = Person('Dhiraj', 44) 

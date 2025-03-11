@@ -9,7 +9,9 @@ class Vector:
   def __str__(self):
     return f'Vector ({self.x}, {self.y})'
 
-v1 = Vector (2, 3)
-v2 = Vector (5, 6)
+if __name__ == "__main__":
 
-print (v1 + v2)
+  v1 = Vector (2, 3)
+  v2 = Vector (5, 6)
+
+  print (v1 + v2)

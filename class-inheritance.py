@@ -14,6 +14,8 @@ class Car:
   def speak(self):
     pass
 
-animals = [Dog(), Cat(), Car()]
-for animal in animals:
-  animal.speak()
+if __name__ == "__main__":
+
+  animals = [Dog(), Cat(), Car()]
+  for animal in animals:
+    animal.speak()
