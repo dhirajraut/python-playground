@@ -6,6 +6,12 @@ if __name__ == "__main__":
   points = [10, 9, 10, 8, 7, 7, 10, 7]
   # Print element
   print (f'Original - {points}')
+
+  # Iterating over a collection.
+  for point in points:
+    print(f'Regular loop {point}')
+  [print (f'Comprehension print {point}') for point in points]
+
   print (f'Accessing specific element - {points[1]}')
   print (f'Max - {max(points)}')
   points.insert(1, 10)
@@ -18,7 +24,7 @@ if __name__ == "__main__":
   print (f'Appened - {points}')
   points.extend ([4, 5]) # Makes [..., 4, 5]
   print (f'Extended - {points}')
-  breakpoint()
+  # breakpoint()
   points[2:3] = [2, 3]
   print (f'Replacing multiple indexes - {points}')
 
@@ -48,3 +54,4 @@ if __name__ == "__main__":
 
   print(citiMap.keys())
   print(citiMap.values())
+  
