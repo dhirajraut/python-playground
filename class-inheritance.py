@@ -12,7 +12,8 @@ class Cat (Animal):
 
 class Car:
   def speak(self):
-    pass
+    # pass
+    print(f'{self.__class__.__name__} says Whroom!')
 
 if __name__ == "__main__":
 

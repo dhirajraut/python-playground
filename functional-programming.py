@@ -19,3 +19,24 @@ if __name__ == "__main__":
   sorted_by_name_last_character = original_products.copy()
   sorted_by_name_last_character.sort(key=lambda item: item[0][-1])
   print (f'Sorted by name last character using lambda - {sorted_by_name_last_character}')
+
+  # MAP function.
+  string_list = ["1", "2", "3", "4"]
+  integer_map = map (lambda x: int(x), string_list)
+  print(f'{integer}' for integer in integer_map)
+  for integer in integer_map:
+     print (f'Map output: {integer}')
+
+  # FILTER function.
+  integers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+  def is_even(number):
+    return True if number % 2 == 0 else False
+  even_numbers = filter (is_even, integers)
+  for integer in even_numbers:
+     print (f'Filter output: {integer}')
+
+  # REDUCE function.
+  from functools import reduce
+  integers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+  sum = reduce (lambda sum, integer: sum + integer, integers, 10)
+  print (f'{sum}')
